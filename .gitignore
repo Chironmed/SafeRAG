@@ -1,0 +1,5 @@
+# Ignore the actual config file
+.DS_Store
+.env
+chroma_db/
+chroma_db/chroma.sqlite3
