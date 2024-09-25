@@ -19,7 +19,11 @@ conda activate saferag
 
 # Install dependencies using conda or pip from requirements.txt
 ```bash
-conda install --yes --file requirements.txt || pip install -r requirements.txt
+conda install --yes --file requirements.txt
+```
+or
+```bash
+pip install -r requirements.txt
 ```
 
 # Environment setup
@@ -27,7 +31,7 @@ conda install --yes --file requirements.txt || pip install -r requirements.txt
 cp .env.example .env
 ```
 
-#Edit .env with:
+# Edit .env with:
 ```env
 CLIENT_ID=your_azure_client_id
 CLIENT_SECRET=your_azure_client_secret
