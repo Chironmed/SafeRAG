@@ -22,13 +22,13 @@ conda activate saferag
 conda install --yes --file requirements.txt || pip install -r requirements.txt
 ```
 
-```bash
 # Environment setup
+```bash
 cp .env.example .env
 ```
 
-```env
 #Edit .env with:
+```env
 CLIENT_ID=your_azure_client_id
 CLIENT_SECRET=your_azure_client_secret
 TENANT_ID=your_azure_tenant_id
@@ -38,14 +38,14 @@ DATA_FILE_PATH=src/data/company_documents.json
 ```
 
 # Prepare data
-# Edit `src/data/company_documents.json` with your document data
+Edit `src/data/company_documents.json` with your document data
 
-```bash
 # Initialize ChromaDB
+```bash
 python src/add_documents.py
 ```
 
-```bash
 # Run main script
+```bash
 python src/main.py
 ```
